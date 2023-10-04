@@ -1,0 +1,88 @@
+PRODUCT BACKLOG.
+1. Idea de negocio.
+La idea principal de la aplicación es proporcionar a los usuarios información meteorológica, tanto de predicción, como de observación, en diferentes puntos de interés a lo largo de España.
+La propuesta de valor se basa en:
+Acceso fácil a datos precisos: Se proporcionará a los usuarios un sencillo acceso a datos precisos sobre el tiempo en cualquier parte de España. Esto incluye información sobre la temperatura, condiciones climáticas, humedad, viento, y precipitaciones, entre otras variables meteorológicas.
+Pronóstico a corto y largo plazo: Se ofrecerán pronósticos tanto a corto plazo –periodos horarios de días–, como a largo plazo –una semana vista– para que los usuarios puedan planificar sus actividades en consecuencia.
+Notificaciones personalizadas: Se permitirá a los usuarios configurar notificaciones personalizadas para recibir alertas sobre cambios en el tiempo en ubicaciones específicas o que hayan marcado como favoritas. Por ejemplo, alertas de tormentas, nieve o lluvia intensa.
+Interfaz de usuario atractiva: Diseñar una interfaz de usuario intuitiva y atractiva que haga que la aplicación sea fácil de usar y agradable de ver.
+Información detallada: Proporcionar información detallada, como mapas meteorológicos, gráficos y datos históricos, para aquellos usuarios interesados en un análisis más profundo del clima.
+2. Necesidades de negocio.
+Las necesidades específicas para una aplicación de pronóstico del tiempo pueden incluir las siguientes:
+Fuente de datos meteorológicos fiables, de calidad y constantemente actualizadas: Es fundamental contar con una fuente de datos meteorológicos que sean fiables y precisos para así brindar un servicio confiable a los usuarios. Además, es necesario la utilización de una API para que esos datos sean actualizados constantemente.
+Infraestructura tecnológica: Hay que asegurarse de tener la infraestructura tecnológica adecuada para alojar y servir la aplicación, especialmente si se prevé un alto volumen de usuarios.
+Seguridad de datos: La seguridad de los datos es esencial, ya que los usuarios podrán registrarse en la aplicación e introducir datos personales como su ubicación en tiempo real, ubicaciones favoritas o eventos.
+Atención al cliente: Fundamental tener un sistema eficaz que permita responder a preguntas de los usuarios y solucionar problemas relacionados con la aplicación.
+Fácil de usar y accesible para todo tipo de usuarios: La interfaz de la aplicación debe ser intuitiva y fácil de navegar, incluso para usuarios con poco conocimiento tecnológico. Se debe garantizar que la experiencia del usuario sea amigable y que puedan acceder rápidamente a la información del tiempo de la localidad que deseen. Esto incluye una navegación sencilla, diseño atractivo y una estructura lógica de la aplicación.
+3. Actores.
+Los actores son las entidades, grupos o individuos que interactúan con la aplicación de alguna manera. Son los siguientes:
+Usuarios finales:
+Usuarios registrados: Aquellos que se han registrado en la aplicación y pueden configurar sus preferencias, guardar ubicaciones favoritas y recibir notificaciones personalizadas.
+Usuarios anónimos: Utilizan la aplicación sin registrarse, pero que pueden buscar pronósticos del tiempo para ubicaciones específicas.
+Proveedores de datos meteorológicos: Fuentes externas que proporcionan datos meteorológicos a la aplicación a través de APIs. El proveedor en este caso será la AEMET,  un organismo público español cuyo objetivo básico es la prestación de servicios meteorológicos que sean competencia del Estado.​
+Sistemas de localización: Utilizados para determinar la ubicación actual del usuario si este ha concedido permisos de ubicación, lo que permite proporcionar pronósticos específicos para su área.
+Servicios de Soporte al Cliente: Para los usuarios que necesiten ayuda, es importante contar con un sistema de soporte al cliente para responder preguntas y resolver problemas.
+Administradores: Los administradores de la aplicación pueden gestionar usuarios, contenido y configuraciones de la aplicación, y tienen acceso a funciones de administración.
+4. Requisitos épicos y derivación de las historias de usuario.
+Los requisitos épicos son descripciones de alto nivel de las principales funcionalidades y características que se desean incluir en la aplicación. Se han elegido los siguientes:
+En la aplicación, los usuarios podrán acceder o buscar los datos meteorológicos, desde consultar los datos diarios, las predicciones o las observaciones meteorológicas.
+Los usuarios podrán usar agregar ubicaciones favoritas a un listado de favoritos.
+El usuario podrá consultar la ubicación según la ubicación de su dispositivo.
+La aplicación deberá permitir la creación de eventos para avisar de la situación climatológica en el día, lugar y hora de celebración, permitiendo su compartición con otros usuarios.
+Los casos de uso o historias de usuario derivadas de estos requisitos épicos son:
+Como usuario, me gustaría que los datos estén actualizados, por lo que es indispensable implementar la conexión con la API del servicio meteorológico empleado.
+Como usuario, quiero ver los datos meteorológicos actuales, como precipitación, viento o temperatura, en la aplicación.
+	Grado de aceptación: Los datos tienen que ser constantemente actualizados.
+Como usuario, me gustaría comprobar la predicción del tiempo a una semana vista en una localidad.
+Grado de aceptación: Esta predicción puede no ser exacta, pero debe ser una guía para el usuario.
+Como usuario, podría estar interesado en acceder a la serie histórica por días en una determinada localidad.
+Grado de aceptación: Se mostrará un calendario con los datos para días anteriores.
+Como usuario, agradecería que la aplicación ofreciera en primer lugar la situación meteorológica en mi ubicación.
+Grado de aceptación: Esta información se mostrará en la pantalla principal de la aplicación.
+Como usuario, estaría interesado en buscar una localidad para acceder a su pronóstico.
+	Grado de aceptación: La localidad debe ser española.
+Como usuario, estaría interesado en que la aplicación notifique de diferentes alertas sobre condiciones climáticas adversas en los sitios de la ubicación o favoritos.
+Grado de aceptación: Las notificaciones deben reflejar las preferencias del usuario y se debe ser posible la desactivación de las mismas
+Como usuario, me gustaría buscar localidades a través de un mapa interactivo que permita el acceso a la predicción.
+
+Grado de aceptación: El mapa debe mostrar la situación meteorológica de las localidades en tiempo real, y se puede acceder a una descripción más detallada a través del mapa. 
+
+Como usuario, quiero poder acceder al historial de sitios que se he buscado en consultas anteriores.
+Grado de aceptación: Se muestra la lista de ubicaciones que se han consultado.
+Como usuario, quiero poder personalizar las unidades de medida (Celsius o Fahrenheit, kilómetros o millas, etc.) según mis preferencias.
+Como usuario, quiero poder registrarme, para poder almacenar información de forma local.
+Grado de aceptación: Esta información debe ser siempre accesible por el usuario y su eliminación está a disposición del usuario.
+Como usuario registrado, quiero iniciar sesión de manera segura en la aplicación.
+Grado de aceptación: Los datos personales del usuario deben ser inaccesibles por terceros.
+Como usuario, agradecería la incorporación de un listado de favoritos para acceder rápidamente a los sitios más relevantes.
+Grado de aceptación: A las ubicaciones se les puede asignar la etiqueta de favorito y se añadirá a una lista accesible por el usuario.
+Como usuario, quiero poder guardar diversos eventos en la aplicación para fechas concretas.	
+Grado de aceptación: Los eventos tendrán un nombre, descripción y fecha.
+Como usuario, quiero que la aplicación me notifique de la previsión meteorológica para un evento guardado unas horas antes.
+Grado de aceptación: Esta notificación debe mostrar claramente la situación meteorológica y advertir sobre todo de una climatología adversa.
+Como usuario, me gustaría compartir un evento con otras personas que vayan a asistir, así como, agregar nuevos eventos a partir de ficheros de eventos compartidos por otros usuarios.
+Grado de aceptación: Se permite compartir eventos con otros usuarios, así como ver los datos de eventos que otros comparten y añadirlos a los eventos del propio usuario.
+5. Historias estructurales y no estructurales.
+Las historias definidas en el anterior apartado se clasifican en historias de usuario estructurales, o casos de uso estructurales, y en historias de usuario no estructurales. Las historias de usuario estructurales serán aquellas que realicen modificaciones derivadas de una nueva estructura en la base de datos.
+Estructurales:
+HU09 - Revisión del historial de localidades buscadas: Se deberá almacenar una lista con las localidades buscadas en la aplicación.
+HU10 - Configuración y personalización de unidades de medidas: Se deberá almacenar las preferencias de uso de un usuario en la aplicación.
+HU11 - Creación de usuario: Se crea un usuario en la aplicación con su correspondiente guardado en la misma.
+HU13 - Listado de localidades favoritas: Se deberá crear y administrar un listado de localidades favoritas indicadas por un usuario.
+HU14 - Crear eventos para aviso meteorológico: Se deberá almacenar fecha, localidad y hora del evento a celebrar para su posterior aviso.
+HU16 - Agregar nuevos eventos a partir de ficheros compartidos por otras personas: Se deberá almacenar la información pasada entre contactos.
+No Estructurales:
+HU01 - Conexión del proyecto con la API de meteorología.
+HU02 - Mostrar datos de la climatología actual dada una localidad.
+HU03 - Mostrar detalle de la predicción meteorológica a una semana vista de una ciudad.
+HU04 - Mostrar datos de la observación meteorológica de una ciudad.
+HU05 - Mostrar datos de la climatología a través de servicios de ubicación.
+HU06 - Búsqueda de una localidad para acceso a datos de la climatología.
+HU07 - Notificación sobre climatología adversa de las localidades guardadas en favoritos.
+HU08 - Búsqueda de localidades a través de una interfaz de mapa.
+HU12 - Inicio de sesión de usuarios registrados.
+HU15 - Notificación de situación meteorológica de un evento registrado.
+
+
+
+
